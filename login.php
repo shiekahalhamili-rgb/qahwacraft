@@ -36,18 +36,6 @@ include 'includes/header.php';
     <button class="btn" type="submit">Sign in</button>
   </form>
 
-  <div class="panel form">
-    <b>Ready-made accounts</b>
-    <?php foreach ($ACCOUNTS as $a): ?>
-      <div class="acct-card">
-        <span class="eyebrow"><?= $a[4] ?></span>
-        <b><?= e($a[0]) ?></b>
-        <span class="muted"><?= e($a[1]) ?> · <?= e($a[2]) ?></span>
-        <?php if ($a[0] === 'Sammer Aldbass'): ?><span class="muted">Discount code: <b>SAMMER20</b> (20% off)</span><?php endif; ?>
-        <button class="btn ghost sm" type="button" data-email="<?= e($a[1]) ?>" data-password="<?= e($a[2]) ?>">Use this account</button>
-      </div>
-    <?php endforeach; ?>
-  </div>
   <p>New customer? <a href="register.php">Create an account</a></p>
 </div>
 

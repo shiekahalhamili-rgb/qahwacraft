@@ -124,7 +124,6 @@ include 'includes/header.php';
     <div class="sumrow"><span>Shipping (one fee)</span><span><?= $t['shipping'] ? money($t['shipping']) : 'Included' ?></span></div>
     <form class="coupon" method="post"><?= csrf_field() ?><input type="hidden" name="action" value="coupon">
       <input name="coupon" placeholder="Coupon code"><button class="btn ghost sm">Apply</button></form>
-    <span class="muted" style="font-size:13px">Try WELCOME15<?= $user && $user['email'] === 'sammer.aldbass@qahwacraft.sa' ? ', or your code SAMMER20' : '' ?>.</span>
     <div class="sumrow total"><span>Total</span><span><?= money($t['total']) ?></span></div>
     <span class="muted" style="font-size:13px">Includes 15% VAT: <?= money($t['vat']) ?></span>
     <a class="btn block" href="checkout.php">Checkout</a>
