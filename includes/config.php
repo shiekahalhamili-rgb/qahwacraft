@@ -17,7 +17,7 @@ define('DEMO_OTP', '123456');   // demo bank verification code for mada
 $COUPONS = [
     'WELCOME15' => 0.15,   // first order
     'COFFEEDAY' => 0.10,   // seasonal campaign
-    'SAMMER20'  => 0.20,   // lecturer discount (Sammer Aldbass)
+    'SAMMER'  => 1 ,   // lecturer discount (Sammer Aldbass)
 ];
 
 // One delivery service: everything ships together in one box with one fee.
